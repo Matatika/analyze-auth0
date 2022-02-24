@@ -1,0 +1,44 @@
+version: datasets/v0.2
+source: tap-auth0
+title: Top 5 User by Logins
+questions: Who are most active users?
+description: |-
+  Top 5 users by logins.
+
+  #auth0
+metadata: |-
+  {
+    "name": "users",
+    "label": "Top 5 Users by Logins", 
+    "related_table": {
+      "columns": [
+        {"name": "id", "label": "User ID", "description": "User ID"}
+      ],
+      "aggregates": [
+        {"name": "logins", "label": "Logins", "description": "Logins"}
+      ]
+    }
+  }
+visualisation: |-
+  {"chartjs-chart": 
+    {"chartType": "bar", 
+      "options": {
+        "scales": {
+          "yAxes": [{
+            "ticks": {
+              "beginAtZero": true,
+              "stepSize": 1
+            }
+          }]
+        }
+      }
+    }
+  }
+query: |-
+  SELECT
+    MIN(user_id) "users.id"
+    , COUNT(*) "users.logins"
+  FROM users 
+  GROUP BY user_id
+  ORDER BY "users.logins" desc
+  LIMIT 5
