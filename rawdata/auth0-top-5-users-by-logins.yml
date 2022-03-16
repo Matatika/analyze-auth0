@@ -1,0 +1,6 @@
+auth0-top-5-users-by-logins: |-
+  [{"stream_auth0_users.id": "Aaron", "stream_auth0_users.logins": 34},
+  {"stream_auth0_users.id": "Reuben", "stream_auth0_users.logins": 26},
+  {"stream_auth0_users.id": "Dan", "stream_auth0_users.logins": 20},
+  {"stream_auth0_users.id": "Debs", "stream_auth0_users.logins": 15},
+  {"stream_auth0_users.id": "Pilot", "stream_auth0_users.logins": 1}]
