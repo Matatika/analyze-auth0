@@ -12,7 +12,7 @@ metadata: |-
     "label": "Top 5 Users by Logins", 
     "related_table": {
       "columns": [
-        {"name": "id", "label": "User ID", "description": "User ID"}
+        {"name": "name", "label": "Name", "description": "Name"}
       ],
       "aggregates": [
         {"name": "logins", "label": "Logins", "description": "Logins"}
@@ -25,8 +25,7 @@ visualisation: |-
       "options": {
         "scales": {
           "y": {
-            "beginAtZero": true,
-            "stepSize": 1
+            "beginAtZero": true
           }
         }
       }
@@ -34,9 +33,9 @@ visualisation: |-
   }
 query: |-
   SELECT
-    MIN(user_id) "stream_auth0_users.id"
-    , COUNT(*) "stream_auth0_users.logins"
+    name "stream_auth0_users.name"
+    , logins_count "stream_auth0_users.logins"
   FROM stream_auth0_users
-  GROUP BY user_id
-  ORDER BY "stream_auth0_users.logins" desc
+  WHERE logins_count is not null
+  ORDER BY "stream_auth0_users.logins" DESC
   LIMIT 5
