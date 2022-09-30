@@ -1,0 +1,11 @@
+auth0-top-machine-to-machine-clients-by-usage: |-
+  [{"logs.client_name": "ef99742c-9717-446b-b71c-7cb42592bd0c", "logs.auth_calls": "1006"},
+  {"logs.client_name": "eb9e6c1b-164a-4e07-a2d4-a26d4725cd13", "logs.auth_calls": "844"},
+  {"logs.client_name": "7e49c406-04d4-4eb9-9690-6f64fd195295", "logs.auth_calls": "718"},
+  {"logs.client_name": "dd19b62e-aef5-4c5f-b0fe-9e40e69e1d85", "logs.auth_calls": "701"},
+  {"logs.client_name": "b7cc0ebe-d69e-4d59-a77d-c21cf4b15438", "logs.auth_calls": "449"},
+  {"logs.client_name": "bfba4ce9-4257-43a3-85b9-5af7c6bdec88", "logs.auth_calls": "422"},
+  {"logs.client_name": "b124c670-a41b-4b88-8649-39bb05901f9f", "logs.auth_calls": "291"},
+  {"logs.client_name": "a18b7603-d5da-4170-a7f6-a9b8962074de", "logs.auth_calls": "232"},
+  {"logs.client_name": "9086f1e1-b158-4d2d-9f17-e16674214c15", "logs.auth_calls": "189"},
+  {"logs.client_name": "5b5ba1a2-1bcb-4c0a-92fa-51367a977fef", "logs.auth_calls": "188"}]

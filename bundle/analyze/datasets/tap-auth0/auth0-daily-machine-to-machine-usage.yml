@@ -4,9 +4,9 @@ title: Daily Machine-to-Machine Usage
 questions: What is my Auth0 machine-to-machine quota usage?
 description: |-
   Total number of authentication calls made by machine-to-machine (M2M) clients per day
-  over the last 30 days. See our
-  [Auth0 feature consumption](https://support.auth0.com/reports/quota/machine-to-machine-auth?tenantId=matatika-staging@eu)
-  for reference.
+  over the last 30 days. See the
+  [Auth0 Quota Utilization](https://support.auth0.com/reports/quota)
+  page for reference.
 
   #auth0
 metadata: |-

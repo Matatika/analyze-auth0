@@ -4,9 +4,9 @@ title: Top Machine-to-Machine Clients by Usage
 questions: Which of my machine-to-machine clients is used the most?
 description: |-
   Top 10 machine-to-machine (M2M) clients by total number of authentication calls
-  made in the last 30 days. See our
-  [Auth0 feature consumption](https://support.auth0.com/reports/quota/machine-to-machine-auth?tenantId=matatika-staging@eu)
-  for reference.
+  made in the last 30 days. See the
+  [Auth0 Quota Utilization](https://support.auth0.com/reports/quota)
+  page for reference.
 
   #auth0
 metadata: |-
