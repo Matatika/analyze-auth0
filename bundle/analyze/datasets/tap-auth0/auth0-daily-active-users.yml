@@ -1,6 +1,6 @@
 version: datasets/v0.2
 source: tap-auth0
-title: Daily active users
+title: Daily Active Users
 questions: How many users logged in per day for the last 90 days?
 description: |-
   Active users for the last 90 days.
